@@ -4,5 +4,6 @@ python:
   - "3.6"
 script:
   - pytest
-  - flake8
+  - tox-travis
+#  - flake8 # Works, but is really strict.
 
