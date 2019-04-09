@@ -1,9 +1,8 @@
 language: python
-install: "pip install pytest flake8 tox-travis" # flake8 pylint pycodestyle
+install: "pip install pytest flake8" # flake8 pylint pycodestyle
 python:
   - "3.6"
 script:
   - pytest
-  - tox-travis
-#  - flake8 # Works, but is really strict.
+  - flake8
 
