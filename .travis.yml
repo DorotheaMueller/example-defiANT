@@ -2,5 +2,7 @@ language: python
 install: "pip install pytest pylint"
 python:
   - "3.6"
-script: "pytest && pylint"
+script: "
+  - pytest;
+  - pylint
 
