@@ -4,5 +4,5 @@ python:
   - "3.6"
 script:
   - pytest
-  - pylint *.py
+  - pylint *.py **/*.py
 
