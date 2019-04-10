@@ -1,8 +1,12 @@
+sudo: false
 language: python
-install: "pip install pytest flake8" # flake8 pylint pycodestyle
+install: "pip install flake8" # pytest in requirements.txt
 python:
   - "3.6"
+deps =
+    -rtest-requirements.txt
 script:
   - pytest
   - flake8
+
 
